@@ -15,6 +15,7 @@ if [ "$CP_EDITION" = "Pro" ]; then
 else
   CP_NAME="CrashPlan"
 fi
+echo "CP_NAME=${CP_NAME}"
 curl -L http://download.code42.com/installs/linux/install/${CP_NAME}/${CP_NAME}_${CP_VERSION}_Linux.tgz | tar -xz --strip=1 -C /tmp/crashplan
 # curl -L http://192.168.0.100:88/CrashPlan_${CP_VERSION}_Linux.tgz | tar -xz --strip=1 -C /tmp/crashplan
 
