@@ -8,9 +8,10 @@ MAINTAINER gfjardim <gfjardim@gmail.com>
 ENV USER_ID="0" \
     GROUP_ID="0" \
     TERM="xterm" \
-    CP_VERSION="4.8.0" \
-    CP_EDITION="Home"
-# CP_EDITION can be Home or Pro
+    CP_VERSION="4.8.0"
+
+# CP_EDITION can be "Home" or "Pro"
+ARG CP_EDITION="Home"
 
 # Use baseimage-docker's init system
 CMD ["/sbin/my_init"]
