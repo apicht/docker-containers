@@ -18,5 +18,7 @@ until [ "$(/etc/init.d/crashplan status)" == "running" ]; do
   fi
 done
 
-${JAVACOMMON} ${GUI_JAVA_OPTS} -classpath "./lib/com.backup42.desktop.jar:./lang:./skin" com.backup42.desktop.CPDesktop \
-              > /config/log/desktop_output.log 2> /config/log/desktop_error.log
+#${JAVACOMMON} ${GUI_JAVA_OPTS} -classpath "./lib/com.backup42.desktop.jar:./lang:./skin" com.backup42.desktop.CPDesktop \
+#              > /config/log/desktop_output.log 2> /config/log/desktop_error.log
+
+${TARGETDIR}/electron/crashplan > /config/log/ui_output.log 2> /config/log/ui_error.log &

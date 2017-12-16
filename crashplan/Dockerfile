@@ -8,9 +8,9 @@ MAINTAINER gfjardim <gfjardim@gmail.com>
 ENV USER_ID="0" \
     GROUP_ID="0" \
     TERM="xterm" \
-    CP_VERSION="4.8.0"
+    CP_VERSION="6.6.0_1506661200660_4347"
 
-# CP_EDITION can be "Home" or "Pro"
+# CP_EDITION can be "Home", "Pro", or "Smb"
 ARG CP_EDITION="Home"
 
 # Use baseimage-docker's init system
@@ -26,4 +26,4 @@ RUN sync && /bin/bash /files/tmp/install.sh
 ##         EXPORTS AND VOLUMES         ##
 #########################################
 VOLUME /data /config
-EXPOSE 4243 4242 4280
+EXPOSE 4239 4243 4242 4280

@@ -46,7 +46,10 @@ apt-get install -qy --force-yes --no-install-recommends \
                 gtk2-engines \
                 ttf-ubuntu-font-family \
                 net-tools \
-                paxctl
+                paxctl \
+                libxss1 \
+                libnss3 \
+                libasound2
 
 # Install window manager and x-server
 apt-get install -qy --force-yes --no-install-recommends \
@@ -57,7 +60,8 @@ apt-get install -qy --force-yes --no-install-recommends \
                 xfonts-75dpi \
                 libfuse2 \
                 xbase-clients \
-                xkb-data
+                xkb-data \
+                python-xdg
 
 # Install noVNC dependencies
 apt-get install -qy --force-yes --no-install-recommends \
